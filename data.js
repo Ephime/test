@@ -3,7 +3,7 @@ const data = {
         {
             description: "Translate the following in the present tense forms:",
             questions: [
-                {q: "Je (avoir) chaude", a: "J'ai chaud", t: "I am hot"},
+                {q: "Je (avoir) chaud", a: "J'ai chaud", t: "I am hot"},
                 {q: "Est-ce que tu (vouloir) parler Francais?", a: "Est-ce que tu veux parler Français?", t: "Do you want to speak French?"},
                 {q: "Vous avez d'autres questions ou (pouvoir)-je aller dormir?", a: "Vous avez d'autres questions ou puis-je aller dormir?", t: "Do you have any other questions or may I go to sleep?"},
                 {q: "Elles (préparer) du café", a: "Elles préparent du café", t: "They (feminine) are making coffee"},
