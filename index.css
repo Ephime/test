@@ -1,0 +1,92 @@
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+}
+
+#testDiv {
+    background-color: #212121;
+    box-shadow: -10px 10px 15px #000, 5px -5px 15px #000;
+    width: 35%;
+    height: 80vh;
+    max-height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #212121;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    color: #808080;
+}
+
+@media screen and (max-width: 960px) {
+    #testDiv{
+        width: 90%;
+    }
+}
+
+#testDiv::-webkit-scrollbar {
+    width: thin;
+}
+
+#testDiv::-webkit-scrollbar-track {
+    background: #212121;
+}
+
+#testDiv::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #212121;
+}
+
+input, button{
+    background-color: #212121;
+    box-shadow: -5px 5px 10px inset #000;
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-radius: 15px;
+    color: #808080;
+    text-align: center;
+    margin: 10px 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+button{
+    box-shadow: -5px 5px 10px #000;
+    background-color: #1b2227;
+    min-height: 35px;
+}
+
+input:hover, input:active, input::selection, input:focus,
+button:hover, button:active, button::selection, button:focus{
+    outline: none;
+}
+
+.correct {
+    background-color: #2e7d32;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.incorrect {
+    background-color: #c62828;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
