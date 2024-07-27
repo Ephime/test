@@ -101,7 +101,7 @@ button:hover, button:active, button::selection, button:focus {
         margin: 70px;
     }
 
-    button{
+    button, input{
         font-size: 4rem;
     }
 }
