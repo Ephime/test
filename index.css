@@ -89,6 +89,7 @@ button:hover, button:active, button::selection, button:focus {
     #testDiv {
         width: 90%;
         font-size: 4rem;
+        border-radius: 50px;
     }
     input, button {
         width: 90%;
