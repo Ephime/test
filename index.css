@@ -26,12 +26,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     color: #808080;
-}
-
-@media screen and (max-width: 1024px) {
-    #testDiv{
-        width: 90%;
-    }
+    padding: 10px; /* Added padding */
 }
 
 #testDiv::-webkit-scrollbar {
@@ -48,7 +43,7 @@ body {
     border: 3px solid #212121;
 }
 
-input, button{
+input, button {
     background-color: #212121;
     box-shadow: -5px 5px 10px inset #000;
     height: 40px;
@@ -63,14 +58,14 @@ input, button{
     user-select: none; /* Standard syntax */
 }
 
-button{
+button {
     box-shadow: -5px 5px 10px #000;
     background-color: #1b2227;
     min-height: 35px;
 }
 
 input:hover, input:active, input::selection, input:focus,
-button:hover, button:active, button::selection, button:focus{
+button:hover, button:active, button::selection, button:focus {
     outline: none;
 }
 
@@ -90,3 +85,42 @@ button:hover, button:active, button::selection, button:focus{
     margin-bottom: 5px;
 }
 
+@media screen and (max-width: 1000px) {
+    #testDiv {
+        width: 90%;
+        font-size: 4rem;
+    }
+    input, button {
+        width: 90%;
+        width: 90%;
+        height: 2rem;
+        min-height: 5rem;
+    }
+    p, input, button{
+        margin: 70px;
+    }
+
+    button{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #testDiv {
+        width: 100%;
+    }
+    input, button {
+        width: 95%;
+        font-size: 1rem; /* Further adjusted font size */
+        height: 35px; /* Adjusted height for smaller screens */
+    }
+    .correct, .incorrect {
+        font-size: 0.9rem; /* Adjusted message font size */
+        padding: 3px; /* Adjusted padding */
+        margin-bottom: 3px; /* Adjusted margin */
+    }
+}
+
+#testDiv{
+    overflow-x: hidden;
+}
